@@ -1,4 +1,4 @@
-# Use the official MongoDB image
+# Use the official MongoDB imagee
 FROM mongo:latest
 
 # Create a directory to host initialization scripts
