@@ -29,5 +29,47 @@ spec:
       registry_type: DOCKER_HUB
       repository: opensignserver
       tag: main
+    envs:
+    - key: CI
+      value: "false"
+      type: SECRET
+    - key: PUBLIC_URL
+      scope: RUN_TIME
+      value: ${APP_URL}
+    - key: REACT_APP_APPID
+      scope: SECRET
+      value: legadranaxn
+    - key: APPID
+      scope: SECRET
+      value: legadranaxn
+    - key: appName
+      scope: SECRET
+      value: open_sign_server
+    - key: MASTER_KEY
+      scope: SECRET
+      value: Xnasd2113yMr
+    - key: PARSE_MOUNT
+      scope: SECRET
+      value: /app
+    - key: DO_SPACE
+      scope: RUN_TIME
+      value: OpenSignSpace
+    - key: DO_ENDPOINT
+      scope: RUN_TIME
+      value: ams3.digitaloceanspaces.com
+    - key: DO_BASEURL
+      scope: RUN_TIME
+      value: https://OpenSignSpace.ams3.digitaloceanspaces.com
+    - key: DO_ACCESS_KEY_ID
+      scope: RUN_TIME
+    - key: DO_SECRET_ACCESS_KEY
+      scope: RUN_TIME
+    - key: MAILGUN_API_KEY
+      scope: RUN_TIME
+    - key: MESSAGE
+      value: "This is a greeting message"
+    - key: MONGODB_URI
+      scope: RUN_TIME
+      value: ${opensign-db.DATABASE_URL}
   databases:
   - name: opensign-db
