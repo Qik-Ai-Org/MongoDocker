@@ -13,6 +13,14 @@ spec:
         path:
           prefix: /
   services:
+  - name: amolshejole-opensign
+    run_command: npm run start
+    http_port: 8080
+    image:
+      registry: amolshejole
+      registry_type: DOCKER_HUB
+      repository: opensign
+      tag: main
   - http_port: 8080
     image:
       registry: amolshejole
