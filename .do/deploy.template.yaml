@@ -18,6 +18,4 @@ spec:
       scope: RUN_TIME
     - key: DATABASE_URL
       scope: RUN_TIME
-      value: ${opensigndomanaged-db.DATABASE_URL}
-  databases:
-  - name: opensigndomanaged-db
+      value: mongodb://root:exampl@opensigndb/OpenSignDB
