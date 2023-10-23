@@ -37,19 +37,19 @@ spec:
       scope: RUN_TIME
       value: ${APP_URL}
     - key: REACT_APP_APPID
-      scope: SECRET
+      scope: RUN_TIME
       value: legadranaxn
     - key: APPID
-      scope: SECRET
+      scope: RUN_TIME
       value: legadranaxn
     - key: appName
-      scope: SECRET
+      scope: RUN_TIME
       value: open_sign_server
     - key: MASTER_KEY
-      scope: SECRET
+      scope: RUN_TIME
       value: Xnasd2113yMr
     - key: PARSE_MOUNT
-      scope: SECRET
+      scope: RUN_TIME
       value: /app
     - key: DO_SPACE
       scope: RUN_TIME
