@@ -22,9 +22,12 @@ spec:
       repository: opensign
       tag: main
   - name: amolshejole-opensignserver
+    run_command: npm run start
     http_port: 8080
     image:
       registry: amolshejole
       registry_type: DOCKER_HUB
       repository: opensignserver
       tag: main
+  databases:
+  - name: opensign-db
