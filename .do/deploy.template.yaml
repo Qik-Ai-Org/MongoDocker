@@ -1,17 +1,17 @@
 spec:
   name: opensigndb
   ingress:
-  rules:
-  - component:
-      name: amolshejole-opensignserver
-    match:
-      path:
-        prefix: /api
-  - component:
-      name: amolshejole-opensign
-    match:
-      path:
-        prefix: /
+    rules:
+    - component:
+        name: amolshejole-opensignserver
+      match:
+        path:
+          prefix: /api
+    - component:
+        name: amolshejole-opensign
+      match:
+        path:
+          prefix: /
   services:
   - name: amolshejole-opensign
     run_command: npm run start
