@@ -1,5 +1,17 @@
 spec:
   name: opensigndb
+  ingress:
+    rules:
+    - component:
+        name: amolshejole-opensignserver
+      match:
+        path:
+          prefix: /api
+    - component:
+        name: opensigndb
+      match:
+        path:
+          prefix: /
   services:
   - http_port: 8080
     image:
