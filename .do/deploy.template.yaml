@@ -1,6 +1,26 @@
 spec:
   name: opensigndb
+  ingress:
+  rules:
+  - component:
+      name: amolshejole-opensignserver
+    match:
+      path:
+        prefix: /api
+  - component:
+      name: amolshejole-opensign
+    match:
+      path:
+        prefix: /
   services:
+  - name: amolshejole-opensign
+    run_command: npm run start
+    http_port: 8080
+    image:
+      registry: amolshejole
+      registry_type: DOCKER_HUB
+      repository: opensign
+      tag: main
   - name: amolshejole-opensignserver
     http_port: 8080
     image:
