@@ -1,13 +1,13 @@
 spec:
   name: opensigndb
   services:
-  - http_port: 8080
-    name: amolshejole-opensignserver
-  image:
-    registry: amolshejole
-    registry_type: DOCKER_HUB
-    repository: opensignserver
-    tag: main
+  - name: amolshejole-opensignserver
+    http_port: 8080
+    image:
+      registry: amolshejole
+      registry_type: DOCKER_HUB
+      repository: opensignserver
+      tag: main
   - name: opensigndb
     dockerfile_path: Dockerfile
     git:
