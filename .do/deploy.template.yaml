@@ -38,4 +38,4 @@ spec:
       scope: RUN_TIME
     - key: DATABASE_URL
       scope: RUN_TIME
-      value: mongodb://root:exampl@opensigndb/OpenSignDB
+      value: mongodb://root:example@opensigndb/OpenSignDB?authSource=admin
