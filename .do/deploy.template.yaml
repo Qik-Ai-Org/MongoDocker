@@ -66,6 +66,8 @@ spec:
       scope: RUN_TIME
     - key: MAILGUN_API_KEY
       scope: RUN_TIME
+    - key: MAILGUN_SENDER
+      scope: RUN_TIME
     - key: MESSAGE
       value: "This is a greeting message"
     - key: MONGODB_URI
