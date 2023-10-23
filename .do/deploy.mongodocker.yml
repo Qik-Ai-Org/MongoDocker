@@ -1,0 +1,23 @@
+spec:
+  name: opensigndb
+  services:
+  - http_port: 8080
+  image:
+    registry: amolshejole
+    registry_type: DOCKER_HUB
+    repository: opensignserver
+    tag: main
+  name: amolshejole-opensignserver
+  - name: opensigndb
+    dockerfile_path: Dockerfile
+    git:
+      repo_clone_url: https://github.com/Qik-Ai-Org/MongoDocker.git
+      branch: main
+    envs:
+    - key: SECRET_KEY_BASE
+      scope: RUN_TIME
+    - key: DATABASE_URL
+      scope: RUN_TIME
+      value: ${opensigndomanaged-db.DATABASE_URL}
+  databases:
+  - name: opensigndomanaged-db
