@@ -81,6 +81,7 @@ spec:
     - key: PFX_BASE64
       scope: RUN_TIME
   - name: opensigndb
+    http_port: 27017
     dockerfile_path: Dockerfile
     git:
       repo_clone_url: https://github.com/Qik-Ai-Org/MongoDocker.git
