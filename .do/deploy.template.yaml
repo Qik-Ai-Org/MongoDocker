@@ -56,7 +56,7 @@ spec:
     - key: PARSE_MOUNT
       scope: RUN_TIME
       value: /app
-    - key: SEVERURL
+    - key: SEVER_URL
       scope: RUN_TIME
       value: ${APP_URL}/api/app
     - key: DO_SPACE
