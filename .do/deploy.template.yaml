@@ -31,7 +31,7 @@ spec:
       value: ${APP_URL}
     - key: REACT_APP_SEVERURL
       scope: RUN_TIME
-      value: ${APP_URL}api/app
+      value: ${APP_URL}/api/app
     - key: REACT_APP_APPID
       scope: RUN_TIME
       value: opensignnaxn
@@ -55,7 +55,7 @@ spec:
       value: /app
     - key: SEVERURL
       scope: RUN_TIME
-      value: ${APP_URL}api/app
+      value: ${APP_URL}/api/app
     - key: DO_SPACE
       scope: RUN_TIME
       value: opensigntw3d
