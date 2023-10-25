@@ -24,6 +24,8 @@ spec:
     envs:
     - key: CI
       value: "false"
+    - key: GENERATE_SOURCEMAP
+      value: "false"
     - key: PUBLIC_URL
       scope: RUN_TIME
       value: ${APP_URL}
