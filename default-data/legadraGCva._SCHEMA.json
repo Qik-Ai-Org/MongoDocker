@@ -138,7 +138,8 @@
       }
     }
   },
-  "TenantId": "*partners_Tenant"
+  "TenantId": "*partners_Tenant",
+  "TourStatus": "array"
 },
 {
   "_id": "contracts_Document",
@@ -495,6 +496,95 @@
       }
     }
   }
+},
+{
+  "_id": "w_appinfo",
+  "objectId": "string",
+  "updatedAt": "date",
+  "createdAt": "date",
+  "orgId": "string",
+  "forgetpassFormId": "string",
+  "mainformObjId": "string",
+  "applogo": "string",
+  "fbAppId": "string",
+  "appname": "string",
+  "loginFormId": "string",
+  "baseurl": "string",
+  "org_name": "string",
+  "signUpFormId": "string",
+  "defaultmenuid": "string",
+  "version": "string",
+  "formTitle": "string",
+  "googleClietId": "string",
+  "_metadata": {
+    "indexes": {
+      "_id_": {
+        "_id": 1
+      }
+    },
+    "class_permissions": {
+      "get": {
+        "*": true
+      },
+      "find": {
+        "*": true
+      },
+      "count": {
+        "*": true
+      },
+      "create": {
+        "*": true
+      },
+      "update": {
+        "*": true
+      },
+      "delete": {
+        "*": true
+      },
+      "addField": {
+        "*": true
+      }
+    },
+    "fields_options": {
+      "uploadUrl": {
+        "required": false
+      }
+    }
+  },
+  "class": "string",
+  "LandingPageId": "string",
+  "accessType": "string",
+  "settings": "array",
+  "appTitle": "string",
+  "metaDescription": "string",
+  "branding_image": "string",
+  "fev_Icon": "string",
+  "defaultRole": "string",
+  "results": "array",
+  "loginType": "string",
+  "createdBy": "*_User",
+  "domain": "string",
+  "enableWebNotification": "boolean",
+  "allowWhiteLabel": "boolean",
+  "uploadUrl": "string"
+},
+{
+  "_id": "w_dashboard",
+  "objectId": "string",
+  "updatedAt": "date",
+  "createdAt": "date",
+  "dbDescription": "string",
+  "dbTitle": "string",
+  "bgColor": "string",
+  "rows": "array",
+  "_metadata": {
+    "indexes": {
+      "_id_": {
+        "_id": 1
+      }
+    }
+  },
+  "appId": "*w_appinfo"
 },
 {
   "_id": "w_formV3",
