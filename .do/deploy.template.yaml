@@ -23,7 +23,7 @@ spec:
       tag: main
     envs:
     - key: CI
-      value: false
+      value: "false"
     - key: PUBLIC_URL
       scope: RUN_TIME
       value: ${APP_URL}
