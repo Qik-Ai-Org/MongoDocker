@@ -69,20 +69,17 @@ spec:
       scope: RUN_TIME
     - key: DO_SECRET_ACCESS_KEY
       scope: RUN_TIME
-      type: SECRET
     - key: DO_REGION
       scope: RUN_TIME
       value: us-west
     - key: MAILGUN_API_KEY
       scope: RUN_TIME
-      type: SECRET
     - key: MAILGUN_DOMAIN
       scope: RUN_TIME
     - key: MAILGUN_SENDER
       scope: RUN_TIME
     - key: PFX_BASE64
       scope: RUN_TIME
-      type: SECRET
   - name: opensigndb
     dockerfile_path: Dockerfile
     git:
