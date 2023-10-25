@@ -42,6 +42,7 @@ spec:
       repository: opensignserver
       tag: main
     name: amolshejole-opensignserver
+    run_command: npm run start
     envs:
     - key: APP_ID
       value: opensignnaxn
